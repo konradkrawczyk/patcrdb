@@ -1,39 +1,45 @@
 
-PATCRdb: Database of TCRs from data mining patent documents.
+# PATCRdb: Database of TCRs from data mining patent documents.
 
-Version 1. 2022.12.15
+2022.12.21 (Version 1)
 
 University of Southern Denmark
-*contact: bootyoona@gmail.com / konrad@sciride.org
+
+Contact: Yoona Lee (yolee21@student.sdu.dk); Konrad Krawczyk (konrad@sciride.org)
 
 
 
-[Introduction]
+## [Introduction]
 
 PATCRdb comprises t-cell receptor (TCR) sequences found in patent documents from three patent sources: United States Patent and Trademark Office(USPTO FT, USPTO PSIPS), World Intellectual Property Organization (WIPO), DNA Data Bank of Japan (DDBJ).
 
 Current release of the database is December 2022.
 
-The database currently covers 23,593 TCR sequences from 496 patent families.
+The database currently covers 26,391 TCR sequences from 495 patent families.
 
 
 
-[Database Contents]
+## [Database Contents]
 
-Both .csv files contain unique combination of the entries.
+1. TCR Sequence DB 
+(PATCRdb_sequence.csv)
+
+- **Original sequence**: The sequence in the form ANARCI received it.
+- **Variable region sequence**: After processing the original sequence via ANARCI/IgBLAST, only the variable portion.
+- **IMGT-numbered sequence**: Immunogenetics Information System (IMGT)-numbering of the variable region sequence, sorted by its four framework regions and three CDRs.
+- **Sequence name**: name of the patent and the sequence number where the sequence was identified.
+- **Families**: European Patent Office (EPO)-defined families, that provide an equivalence class for patent documents with different numbers across different jurisdictions (to be taken as a unique identifier of a patent document).
 
 
-1. PATCRdb_sequence.csv
 
-# Sequence: TCR variable region sequence found in the patent document
-# Patent family: The patent family the sequence was found in (*Not identified families are left blank)
-# Patent number: The patent documents the sequence was found in
+2. TCR Patent Metadata DB 
+(PATCRdb_metadata.csv)
 
+- **Title**: The title of the patent document.
+- **Abstract**: The abstract of the patent document.
+- **Family**: The EPO family assigned to the document.
+- **Applicants**: The applicants on the patent document, e.g. company names.
+- **Inventors**: The people cited as inventors of the given work.
+- **Dates**: List of dates associated with the document, as there can be several in a lifetime of a patent document.
+- **Classes**: The Cooperative Patent Classification (CPC) schemes.
 
-2. PATCRdb_metadata.csv
-
-(*Entries without their mention of title or applicant were removed)
-
-# Patent family: The patent family corresponding to the patent document
-# Title: Title of the patent document
-# Applicant: Applicants of the patent document (*Only the primary applicant was extracted from each patent document)
