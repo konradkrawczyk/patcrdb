@@ -21,8 +21,8 @@ The database currently covers 26,391 TCR sequences from 495 patent families.
 
 ## [Database Contents]
 
-1. TCR Sequence DB 
-(PATCRdb_sequence.csv)
+### 1. TCR Sequence DB 
+PATCRdb_sequence.csv
 
 - **Original sequence**: The sequence in the form ANARCI received it.
 - **Variable region sequence**: After processing the original sequence via ANARCI/IgBLAST, only the variable portion.
@@ -32,8 +32,8 @@ The database currently covers 26,391 TCR sequences from 495 patent families.
 
 
 
-2. TCR Patent Metadata DB 
-(PATCRdb_metadata.csv)
+### 2. TCR Patent Metadata DB 
+PATCRdb_metadata.csv
 
 - **Title**: The title of the patent document.
 - **Abstract**: The abstract of the patent document.
