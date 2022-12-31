@@ -5,7 +5,7 @@
 
 University of Southern Denmark
 
-Contact: Yoona Lee (yolee21@student.sdu.dk); Konrad Krawczyk (konrad@sciride.org)
+Contact: Yoona Lee (bootyoona@gmail.com); Konrad Krawczyk (konrad@sciride.org)
 
 
 
